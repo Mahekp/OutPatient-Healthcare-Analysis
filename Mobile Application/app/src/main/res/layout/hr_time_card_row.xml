@@ -1,0 +1,133 @@
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    card_view:cardCornerRadius="5dp">
+
+<!-- Main Relative Layout-->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="#FFFFFF"
+    android:padding="4dp">
+
+    <!-- TextView for the Date-->
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="Date"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <!-- TextView for displaying Max Heart Rate value-->
+    <TextView
+        android:id="@+id/tvMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDate"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="Max:"
+        android:textColor="@color/text_pink"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMaxValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDate"
+        android:layout_toRightOf="@+id/tvMax"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="maxValue"
+        android:textColor="@color/text_gray"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvAtMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDate"
+        android:layout_toRightOf="@+id/tvMaxValue"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="at"
+        android:textColor="@color/text_gray"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvMaxTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDate"
+        android:layout_toRightOf="@+id/tvAtMax"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="maxTime"
+        android:textColor="@color/text_gray"
+        android:textSize="16sp" />
+
+    <!-- TextView for displaying Min Heart Rate Value-->
+    <TextView
+        android:id="@+id/tvMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMax"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="Min:"
+        android:textColor="@color/text_pink"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvMinValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMaxValue"
+        android:layout_toRightOf="@+id/tvMin"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="minValue"
+        android:textColor="@color/text_gray"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvAtMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAtMax"
+        android:layout_toRightOf="@+id/tvMinValue"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="at"
+        android:textColor="@color/text_gray"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tvMinTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMaxTime"
+        android:layout_toRightOf="@+id/tvAtMin"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:text="minTime"
+        android:textColor="@color/text_gray"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>
+
+</android.support.v7.widget.CardView>

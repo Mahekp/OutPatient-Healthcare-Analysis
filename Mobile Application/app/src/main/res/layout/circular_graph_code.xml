@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:indeterminate="false"
+        android:layout_marginLeft="80dp"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/circle_progress_background"
+        android:id="@+id/progressBar"
+        android:layout_alignTop="@+id/calories_burnt_circle_progress_bar"/>
+
+    <ProgressBar
+        android:id="@+id/calories_burnt_circle_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="0dp"
+        android:max="100"
+        android:rotation="-90"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/circle_progress_foreground"
+        android:layout_alignLeft="@+id/progressBar"
+        android:layout_alignStart="@+id/progressBar"
+        android:layout_marginTop="61dp" />
+
+</LinearLayout>
